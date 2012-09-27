@@ -111,6 +111,7 @@ h3.emphasize {
 }
 .article ul.style li .bd {
   margin-left: 50px;
+  position: relative;
 }
 .article ul.style li .bd .tip {
   margin: 10px 0;
