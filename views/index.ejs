@@ -30,7 +30,6 @@
             <div class="dates"><a href="#" title="2012-11-10T00:00:00Z"><time datetime="2012-11-10T00:00:00Z" class="start">貳零壹貳年 拾壹月 拾日 晨 八時整</time></a> 至 <a href="#" title="2012-11-12T00:00:00Z"><time datetime="2012-11-12T00:00:00Z" class="end">拾壹月 拾貳日 晨 八時整</time></a></div>
             <div class="step">
               <ul class="style">
-                <li>
                   <div class="hd">
                     <div class="icon icon-yang">
                       <div class="icon-yang-rectangle-1"></div>
@@ -40,31 +39,12 @@
                       <div class="icon-yang-dot-1"></div>
                       <div class="icon-yang-dot-2"></div>
                     </div>
-                    <div class="name kunfu">步驟壹</div>
-                  </div><!-- .style .hd end -->
-                  <div class="bd">
-                    <a href="http://nodeknockout.com/" target="_blank" class="external-link btn btn-large">Node.js Knockout</a>
-                    <div class="tip">
-                        眾英雄(雌) 於洋人的網站完成註冊，截止日期於 <strong>貳零壹貳年 拾壹月 貳日</strong> ，實況以國際時間為主。
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="hd">
-                    <div class="icon icon-yang">
-                      <div class="icon-yang-rectangle-1"></div>
-                      <div class="icon-yang-rectangle-2"></div>
-                      <div class="icon-yang-circle-1"></div>
-                      <div class="icon-yang-circle-2"></div>
-                      <div class="icon-yang-dot-1"></div>
-                      <div class="icon-yang-dot-2"></div>
-                    </div>
-                    <div class="name kunfu">步驟貳</div>
+                    <div class="name kunfu">參加辦法</div>
                   </div><!-- .style .hd end -->
                   <div class="bd">
                     <a href="https://docs.google.com/spreadsheet/viewform?formkey=dHE0QzhmOE5LdUYzcE5YT09rVDRBV1E6MQ" target="_blank" class="external-link btn btn-large">Node.js Knockout Taiwan</a>
                     <div class="tip">
-                       對內需登記名冊，待會眾審核通過之時，將主動以飛鴿聯絡。
+                       對內參賽名冊，將送件至 <a href="http://nodeknockout.com/">NodeKnockout</a> 主站，審核通過將會寄送郵件通知，請激活您的帳號，報名截止日期於 <strong>貳零壹貳年 拾壹月 貳日</strong> ，實況以國際時間為主。
                     </div>
                   </div>
                 </li>
@@ -131,15 +111,29 @@
     </section>
     </div>
 <div id="fb-root"></div>
-<script>(function(d, s, id) {
+<script>
+(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
   if (d.getElementById(id)) return;
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=470728142953792";
   fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+}(document, 'script', 'facebook-jssdk'));
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-35142334-1']);
+_gaq.push(['_setDomainName', 'nodejs.tw']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
 <script>
 <!--
+/*
 #Node knockout Taiwan github
  * [github project](https://github.com/clonn/nodeko-tw)
  * 關於 node.js 的參考資料，直接可以找 [book.nodejs.tw](http://book.nodejs.tw)
@@ -152,6 +146,7 @@
  * http://nodeknockout.com/
 
  PS. 正在尋找贊助商，還有場地，請各位協助 m(_ _)m
+ */
 -->
 </script>
   </body>
