@@ -126,6 +126,9 @@ h3.emphasize {
 ul {
   position: relative;
 }
+ul.sheet {
+  top: 20px;
+}
 ul > li {
   text-align: left;
   display: inline-block;
@@ -139,8 +142,8 @@ ul > li.host img {
   height: 60px;
 }
 ul > li.sponsor img {
-  width: 130px;
-  height: 30px;
+  width: 180px;
+  height: 35px;
 }
 .land {
   text-align: right;
