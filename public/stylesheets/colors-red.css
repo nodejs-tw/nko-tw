@@ -1,0 +1,60 @@
+/******************
+
+Color scheme
+
+******************/
+
+body
+{
+    background-color: #EEB52F; /* Body background color */
+}
+
+#nav
+{
+    background: url(../img/arrow.png) right center no-repeat;
+}
+
+#nav a:hover
+{
+    background: #C22C2C; /* Navigation link background on hover */
+	color: #EEB52F;
+}
+
+#search
+{
+    border: 1px solid #C22C2C; /* Searchbox border */
+}
+
+
+/* #Media Queries
+================================================== */
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px)
+{
+    #nav
+    {
+        /* Navigation is transparent for mobile devices */
+        background: transparent;
+        border: none;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    #nav > a
+    {
+        color: #C22C2C; /* Navigation link colors for mobile devices */
+    }
+
+    #nav > a:hover, #nav > a:active
+    {
+        background: transparent; /* Navigation links background is transparent for mobile devices */
+    }
+
+    #search
+    {
+        border-color: #999; /* Searchbox border for mobile devices */
+    }
+}

@@ -1,0 +1,233 @@
+/******************
+
+Template stylesheet
+
+******************/
+
+/* BODY */
+
+body
+{
+    margin: 0;
+        border-top: 5px solid #363636;
+    background: #fff url(../img/background.png) top left repeat;
+    font: 14px/1.4 "Lato", sans-serif;
+    color: #363636;
+}
+
+/* COMMON STYLES */
+
+p
+{
+    margin: 0 0 25px 0;
+}
+
+.zh {
+    font-family: 微軟正黑體,Arial,Helvetica,sans-serif,'STHeiti Light','儷黑 Pro','LiHei Pro','Microsoft Yahei','Microsoft JhengHei',新細明體;
+    font-size: 14px;
+    font-weight:800;
+}
+
+.zh strong {
+    background: #363636;
+        color: #EEB52F;
+}
+
+.ultrabold
+{
+    font-weight: 900;
+}
+
+/* HEADER */
+
+#header
+{
+    padding: 21px 0 0 0;
+}
+
+/* LOGO */
+
+#logo
+{
+    display: inline-block;
+}
+
+#logo img
+{
+    height: 207px;
+    width: 258px;
+}
+
+/* NAVIGATION */
+
+#nav
+{
+    height: 65px;
+    line-height: 30px;
+    padding: 5px 0;
+    text-align: right;
+}
+#nav li {
+  display: inline;
+}
+
+#nav a
+{
+    display: inline-block;
+        background: #C22C2C;
+    font: 15px/30px "Lato", sans-serif;
+    color: #fff;
+    text-decoration: none;
+    padding: 0 6px;
+}
+
+#nav a:hover
+{
+    border-radius: 4px;
+}
+
+/* ADDITIONAL MESSAGE */
+
+#message
+{
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 1;
+}
+
+/* ERROR MESSAGE */
+
+#error
+{
+    float: right;
+    margin-top: -5px;
+    font: 300 72px/0.8 "Lato", sans-serif;
+    color: #363636;
+}
+
+#error > span
+{
+    display: inline-block;
+}
+
+#core
+{
+    font-weight: 900;
+    font-size: 180px;
+}
+
+#core2
+{
+    font-weight: 900;
+    font-size: 90px;
+        padding: 10px;
+        background:#363636;
+        color:#EEB52F;
+}
+
+#error-text
+{
+    margin-left: 16px;
+}
+
+/* footer */
+
+footer
+{
+        background-color:#363636;
+        margin-bottom:0px;
+        padding: 50px 0 100px 0;;
+        text-align:center;
+        color:#EEB52F;
+}
+footer .bd {
+  width: 960px;
+  margin: 0 auto;
+}
+footer .thanks,
+footer .sponsor,
+footer .host {
+  float: right;
+  text-align: left;
+  width: 160px;
+}
+footer img {
+  width: 150px;
+}
+
+/* #Media Queries
+================================================== */
+
+/* Smaller than standard 960 (devices and browsers) */
+@media only screen and (max-width: 959px) {}
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 768px) and (max-width: 959px)
+{
+
+
+}
+
+/* All Mobile Sizes (devices and browser) */
+@media only screen and (max-width: 767px)
+{
+    #nav
+    {
+        height: auto;
+        padding: 0;
+        margin-bottom: 25px;
+        background: transparent;
+        border: none;
+
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+    }
+
+    #nav > a
+    {
+        padding: 0;
+        margin-left: 0;
+        margin-right: 0;
+        width: 288px;
+        font-size: 20px;
+        text-shadow: none;
+    }
+
+    #nav > a:hover, #nav > a:active
+    {
+        color: #000;
+        background: transparent;
+    }
+
+    #message
+    {
+        margin-top: 25px;
+        font-size: 24px;
+    }
+
+    #error
+    {
+        float: none;
+        font-size: 24px;
+        margin-top: 0;
+    }
+
+    #error-code
+    {
+        font-size: 40px;
+    }
+    footer .bd {
+      width: 480px;
+      margin: 0 auto;
+    }
+    footer img {
+      width: 80px;
+    }
+}
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 767px) {}
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 479px) {}
