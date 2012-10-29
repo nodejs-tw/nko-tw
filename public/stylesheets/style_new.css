@@ -136,7 +136,7 @@ footer
 {
         background-color:#363636;
         margin-bottom:0px;
-        padding: 50px 0 100px 0;;
+        padding: 20px 0 100px 0;;
         text-align:center;
         color:#EEB52F;
 }
@@ -149,10 +149,15 @@ footer .sponsor,
 footer .host {
   float: right;
   text-align: left;
-  width: 160px;
+  padding-left: 10px;
+  width: 170px;
 }
 footer img {
   width: 150px;
+}
+footer li  li {
+  background: #fff;
+  margin: 10px 0;
 }
 
 /* #Media Queries
@@ -224,6 +229,32 @@ footer img {
     footer img {
       width: 80px;
     }
+}
+
+.clearfix:after {
+
+  content: ".";
+
+  display: block;
+
+  clear: both;
+
+  visibility: hidden;
+
+  line-height: 0;
+
+  height: 0;
+
+}
+
+.clearfix {
+  display: inline-block;
+}
+html[xmlns] .clearfix {
+  display: block;
+}
+* html .clearfix {
+  height: 1%;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
