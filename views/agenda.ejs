@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <title>Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰</title>
+
+        <!-- load lato font from google web fonts -->
+        <link href='http://fonts.googleapis.com/css?family=lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+        <!-- force mobile devices to turn fullscreen mode -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- stylesheet assets -->
+        <link rel="stylesheet" href="/stylesheets/reset.css">
+            <link rel="stylesheet" href="/stylesheets/skeleton.css">
+        <!-- /stylesheet assets -->
+
+        <!-- template stylesheet -->
+        <link href="/stylesheets/style_new.css" rel="stylesheet">
+        <!-- /template stylesheet -->
+
+        <!-- color scheme stylesheet -->
+        <link href="/stylesheets/colors-red.css" rel="stylesheet" id="color_stylesheet">
+        <link href="/stylesheets/ui-darkness/jquery-ui-1.9.1.custom.min.css" rel="stylesheet">
+        <!-- /color scheme stylesheet -->
+
+        <!-- scripts -->
+        <script src="/javascripts/jquery.js"></script>
+        <script src="/javascripts/jquery.rotate.js"></script>
+        <script src="/javascripts/jquery.breakit.js"></script>
+        <script src="/javascripts/js.js"></script>
+        <script src="/javascripts/jquery-ui-1.9.1.custom.min.js"></script>
+        <script type="text/javascript" src="/javascripts/plugin.js"></script>
+        <!-- /scripts -->
+    </head>
+
+    <body class="broken-animated">
+        <div class="container">
+          <div class="sns">
+            <span class="tw-share"><a href="https://twitter.com/share" data-url="http://nodeknockout.nodejs.tw/" data-via="Node.JS KO Taiwan" data-hashtags="node.js hackthon" class="twitter-share-button">Tweet</a></span>
+            <span class="g-share"><g:plusone size="small" href="http://nodeknockout.nodejs.tw/"></g:plusone></span>
+            <span class="fb-like" data-href="http://nodeknockout.nodejs.tw/" data-layout="button_count" data-send="false" data-width="450" data-show-faces="false"></span>
+          </div>
+            <!-- header -->
+          <div id="header">
+                <a href="http://registrano.com/events/nodeworkshop1" target="_blank" class="broken broken-swing" id="logo">
+                    <img src="/images/workshop_node.png" alt="報名表" border="0">
+                </a>
+            <!-- navigation -->
+            <div id="nav">
+              <ul>
+                <li><a href="/">首頁</a></li>
+                <li><a href="/agenda">行程表</a></li>
+                <li><a href="mailto:contact@nodejs.tw">如有問題請與我們聯絡 contact us.</a></li>
+              </ul>
+            </div>
+
+            <p class="zh">
+              <strong>參加辦法：</strong>對內參賽名冊，將送件至 nodeknockout 主站，審核通過將會寄送郵件通知，請激活您的帳號，報名截止日期於 2012年11月02日 ，實況以國際時間為主。<br>
+              <strong>參加資格：</strong>報名需完成以上步驟，取得通知信件，以茲證明參賽資格隊伍需一人以上，四人以內團隊程式需要發佈至 github.com ，同時發佈於 nodejitsu，參照國際規定黑客頌程式，限定於比賽 48 小時，逐步建立，不得有偷吃步行為。比賽開始前，建議將共用模組抽出，打造初步藍圖，以免向隅 </p>
+
+<div id="tabs">
+    <ul>
+        <li><a href="#hackthon">黑客頌</a></li>
+        <li><a href="#workshop">工作坊</a></li>
+    </ul>
+    <div id="hackthon" class="clearfix">
+      <div class="preface">
+        <strong>參加辦法：</strong>對內參賽名冊，將送件至 nodeknockout 主站，審核通過將會寄送郵件通知，請激活您的帳號，報名截止日期於 2012年11月02日 ，實況以國際時間為主。<br>
+      </div>
+      <div class="schedule">
+        <table>
+        <thead>
+        <tr>
+        <th>Node KO hackthon 2012/11/10</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>   8:00 - 09:00    報到</td>
+        </tr>
+        <tr>
+        <td>0900 - 0930    node ko 介紹 (108)</td>
+        </tr>
+        <tr>
+        <td>0930 - 1200        hack time (108)</td>
+        </tr>
+        <tr>
+        <td>1200 - 1330        午休</td>
+        </tr>
+        <tr>
+        <td>1330 - 1700 hack time (108)</td>
+        </tr>
+        <tr>
+        <td>1750 - 1830    idea 分享(108)</td>
+        </tr>
+        <tr>
+        <td>1830 - 1900    晚餐時間</td>
+        </tr>
+        <tr>
+        <td>1900 - 2300    hack time (108)</td>
+        </tr>
+        </tbody>
+        </table>
+
+        <table>
+        <thead>
+        <tr>
+        <th>Node KO hackthon 2012/11/11</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td>0000 - 0700        hack time (108)</td>
+        </tr>
+        <tr>
+        <td>0700 - 0800        早餐</td>
+        </tr>
+        <tr>
+        <td>0800 - 1200        hack time (108)</td>
+        </tr>
+        <tr>
+        <td>1200 - 1330    午餐</td>
+        </tr>
+        <tr>
+        <td>1330 - 1430    session1</td>
+        </tr>
+        <tr>
+        <td>1430 - 1440    休息  </td>
+        </tr>
+        <tr>
+        <td>1440 - 1540    session2</td>
+        </tr>
+        <tr>
+        <td>1540 - 1550    休息</td>
+        </tr>
+        <tr>
+        <td>1550 - 1650    session3</td>
+        </tr>
+        <tr>
+        <td>1650 - 1800    準備時間</td>
+        </tr>
+        <tr>
+        <td>1800 - 1850    展示時間 (106+107)</td>
+        </tr>
+        </tbody>
+        </table>
+      </div><!-- end of #schedule -->
+    </div>
+    <div id="workshop" class="clearfix">
+        <p>Node.js 在許多國外大型網站上已經是個舉足輕重的地位，而台灣 Node.js Taiwan 社群致力於推廣 Node.js， 也舉辦了 20 場的活動，而 Node.js 技術成為今年不可不知的重要開發方向之一。</p>
+
+        <p>這次將提供給大家一次性，從基本介紹到建立一個服務應用的教學體制，從什麼是  Node.js 開始講起，到建立一個CMS 系統，到最後學習如何使用  Node.js deploy 到雲端服務環境，藉由完整教學，讓更多人透過這次活動重新體驗一次 Node.js ，了解這個語言能夠為自己及整體帶來的好處。</p>
+        <div class="date">
+        日期: 2012/11/10
+        </div>
+        <div class="schedule">
+          <table>
+          <thead>
+          <tr>
+          <th class="time">時間</th>
+          <th class="workshop">Workshop</th>
+          <th class="note">   備註</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+          <td>1300 - 1330</td>
+          <td>   進場  </td>
+          <td></td>
+          </tr>
+          <tr>
+          <td>1330 - 1420</td>
+          <td>   Basic Node.js</td>
+          <td>  Node.js 環境架構簡介，同時講解基礎 Node.js API</td>
+          </tr>
+          <tr>
+          <td>1420 - 1430</td>
+          <td>   break   </td>
+          <td></td>
+          </tr>
+          <tr>
+          <td>1430 - 1530</td>
+          <td>   Node.js CRUD &amp; deploy</td>
+          <td>  Node.js之父所在的 Joyent 採用Node.js作為公有雲 Cloud API 之實作，如何應用來自動化建置及部署您的Node.js服務</td>
+          </tr>
+          <tr>
+          <td>1530 - 1600</td>
+          <td>   break   </td>
+          <td></td>
+          </tr>
+          <tr>
+          <td>1600 - 1650</td>
+          <td>   RealTime Web Application 實作</td>
+          <td>    以建立一個即時應用服務，同時介紹整體 Node.js開發 Web 服務框架：ExpressJS + EJS + Socket.io  + Nib ...常用之套件</td>
+          </tr>
+          <tr>
+          <td>1650 - 1700</td>
+          <td>   break   </td>
+          <td></td>
+          </tr>
+          <tr>
+          <td>1700 - 1750</td>
+          <td>   Node.js密不可分的夥伴，Database</td>
+          <td>    延伸Realtime 架構，連線NoSQL資料庫，並探討Map / Reduce之精神</td>
+          </tr>
+          </tbody>
+          </table>
+        </div><!-- end of .schedule -->
+    </div>
+</div>
+            </div>
+            <!-- /HEADER -->
+
+            <!-- ADDITIONAL MESSAGE -->
+          <div id="message">
+                <p class="ultrabold">2012/11/10 - 11/11</p>
+                <p>AM8:00 Start<br><span class="ultrabold">48HR!</span></p>
+            </div>
+            <!-- /ADDITIONAL MESSAGE -->
+
+            <!-- ERROR MESSAGE -->
+          <h1 id="error">
+              <span id="core">NODE.JS</span>
+              <span id="core2">KO</span>
+          </h1>
+            <!-- /ERROR MESSAGE -->
+        </div>
+        <footer>
+          <div class="bd">
+            <ul>
+              <li class="host">
+                <div class="header">主辦單位：</div>
+                <ul class="host-list clearfix">
+                  <li class="micloud"><a href="http://micloud.tw" target="_blank" title="MiCloud tw"><img src="/images/micloud-logo-big.png"></a></li>
+                  <li class="ossf"><a href="http://www.openfoundry.org/" target="_blank" title="自由軟體鑄造場"><img src="/images/ossf.png"></a></li>
+                  <li class="jsdc"><a href="http://jsdc.tw" target="_blank" title="JSDC Taiwan"><img src="http://jsdc.tw/2013/img/website_logo.png"></a></li>
+                  <li class="node"><a href="http://nodejs.tw" target="_blank" title="Node.js Taiwan"><img src="/images/nodetw.jpg"></a></li>
+                </ul>
+              </li>
+              <li class="sponsor">
+                <div class="header">贊助單位：</div>
+                <div class="sponsor-list clearfix">
+                  <ul class="sheet" >
+                    <li class="aotter"><a href="http://www.aotter.net/" target="_blank" title="aotter"><img src="/images/aotter.png"></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="thanks">
+                <div class="header">特別感謝：</div>
+                <div class="thanks-list clearfix">
+                  <ul class="list">
+                    <li class="citi"><a href="http://www.citi.sinica.edu.tw/" target="_blank" title="citi"><img src="/images/citi.png"></a></li>
+                    <li class="nsc"><a href="http://web1.nsc.gov.tw/" target="_blank" title="nsc"><img src="/images/nsc.jpg"></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </footer>
+<script>
+    $(function() {
+        $( "#tabs" ).tabs();
+    });
+</script>
+    </body>
+</html>
