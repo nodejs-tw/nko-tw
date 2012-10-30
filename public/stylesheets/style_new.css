@@ -26,6 +26,7 @@ p
     font-family: 微軟正黑體,Arial,Helvetica,sans-serif,'STHeiti Light','儷黑 Pro','LiHei Pro','Microsoft Yahei','Microsoft JhengHei',新細明體;
     font-size: 14px;
     font-weight:800;
+    line-height: 150%;
 }
 
 .zh strong {
@@ -129,6 +130,41 @@ p
 {
     margin-left: 16px;
 }
+table {
+   float: left;
+   margin-right: 20px;
+}
+table thead {
+   background: #c22c2c;
+   color: #fff;
+}
+#tabs {
+   opacity: 0.9;
+}
+#tabs .schedule {
+   width: 500px;
+   margin: 0 auto;
+}
+#tabs #workshop .schedule {
+   width: 650px;
+}
+#tabs #workshop .schedule .time {
+   width: 100px;
+}
+#tabs #workshop .schedule .workshop {
+   width: 300px;
+}
+#tabs #workshop .schedule .note {
+   width: 200px;
+}
+#fullhouse {
+  padding-bottom: 20px;
+  font-weight: 800;
+}
+#fullhouse strong {
+  font-size: 48px;
+  background: #C22C2C;
+}
 
 /* footer */
 
@@ -141,23 +177,40 @@ footer
         color:#EEB52F;
 }
 footer .bd {
-  width: 960px;
+  width: 850px;
   margin: 0 auto;
 }
 footer .thanks,
 footer .sponsor,
 footer .host {
-  float: right;
   text-align: left;
   padding-left: 10px;
-  width: 170px;
+  padding-bottom: 10px;
 }
 footer img {
+  opacity: 0.8;
+  height: 45px;
+}
+footer li.citi img,
+footer li.nsc img {
+  height: 100px;
+}
+footer li.ossf img {
+  width: 180px;
+}
+footer li.micloud img {
   width: 150px;
 }
+footer li.jsdc img {
+  width: 45px;
+}
+footer li.node img {
+  width: 100px;
+}
 footer li  li {
+  float: right;
   background: #fff;
-  margin: 10px 0;
+  margin: 0 5px;
 }
 
 /* #Media Queries
@@ -222,12 +275,9 @@ footer li  li {
     {
         font-size: 40px;
     }
-    footer .bd {
-      width: 480px;
-      margin: 0 auto;
-    }
-    footer img {
-      width: 80px;
+    footer * {
+
+      display: none;
     }
 }
 
@@ -255,6 +305,11 @@ html[xmlns] .clearfix {
 }
 * html .clearfix {
   height: 1%;
+}
+.sns {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */

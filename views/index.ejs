@@ -1,157 +1,113 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title><%= title %></title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/stylesheets/bootstrap-responsive.css" rel="stylesheet">
-    <link href="/stylesheets/bootstrap.css" rel="stylesheet">
-    <link href="/stylesheets/peculiar.css" rel="stylesheet">
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-    <script type="text/javascript" src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
-    <script type="text/javascript" src="/javascripts/plugin.js"></script>
-  </head>
-  <body>
-    <div class="container">
-    <div class="header">
-      <span class="tw-share"><a href="https://twitter.com/share" data-url="http://nodeknockout.nodejs.tw/" data-via="Node.JS KO Taiwan" data-hashtags="node.js hackthon" class="twitter-share-button">Tweet</a></span>
-      <span class="g-share"><g:plusone size="small" href="http://nodeknockout.nodejs.tw/"></g:plusone></span>
-      <span class="fb-like" data-href="http://nodeknockout.nodejs.tw/" data-layout="button_count" data-send="false" data-width="450" data-show-faces="false"></span>
-    </div>
-    <section id="gridSystem" class="ct2">
-      <div class="page-header">
-        <h1 class="logo">
-          <a href="/">node.js <span class="ko">ko</span></a>
-        </h1>
-      </div>
-      <h3 class="bulla ct1"><span>號召黑客，展現自我，共同組隊，奮戰兩日!</sapn></h3>
-      <div class="article">
-        <p><strong>公告</strong>，廣招天下好手，爭奪世界武林排行，群雄奮起，連續二日，肆拾捌小時抗戰，號昭天下英雄（雌）豪傑共聚一堂。不分大小咖，盼眾人齊聚一堂，眾賢所能，集天下之大成。<br/><br/>時間，</p>
-        <div class="bs-docs-grid">
-          <div class="row show-grid">
-            <div class="dates"><a href="#" title="2012-11-10T00:00:00Z"><time datetime="2012-11-10T00:00:00Z" class="start">貳零壹貳年 拾壹月 拾日 晨 八時整</time></a> 至 <a href="#" title="2012-11-12T00:00:00Z"><time datetime="2012-11-12T00:00:00Z" class="end">拾壹月 拾貳日 晨 八時整</time></a></div>
-            <div class="step">
-              <ul class="style">
-                <li>
-                  <div class="hd">
-                    <div class="icon icon-yang">
-                      <div class="icon-yang-rectangle-1"></div>
-                      <div class="icon-yang-rectangle-2"></div>
-                      <div class="icon-yang-circle-1"></div>
-                      <div class="icon-yang-circle-2"></div>
-                      <div class="icon-yang-dot-1"></div>
-                      <div class="icon-yang-dot-2"></div>
-                    </div>
-                    <div class="name kunfu">參加辦法</div>
-                  </div><!-- .style .hd end -->
-                  <div class="bd">
-                    <a href="https://docs.google.com/spreadsheet/viewform?formkey=dHE0QzhmOE5LdUYzcE5YT09rVDRBV1E6MQ" target="_blank" class="external-link btn btn-large btn-danger">報名 Node.JS KO 黑客頌</a>
-                    <div class="tip">
-                       對內參賽名冊，將送件至 <a href="http://nodeknockout.com/">NodeKnockout</a> 主站，審核通過將會寄送郵件通知，請激活您的帳號，報名截止日期於 <strong>貳零壹貳年 拾壹月 貳日</strong> ，實況以國際時間為主。
-                    </div>
-                  </div>
-                </li>
-                <li>
-                  <div class="hd">
-                    <div class="icon icon-yang">
-                      <div class="icon-yang-rectangle-1"></div>
-                      <div class="icon-yang-rectangle-2"></div>
-                      <div class="icon-yang-circle-1"></div>
-                      <div class="icon-yang-circle-2"></div>
-                      <div class="icon-yang-dot-1"></div>
-                      <div class="icon-yang-dot-2"></div>
-                    </div>
-                    <div class="name kunfu">工作坊(11 月 10 日)</div>
-                  </div><!-- .style .hd end -->
-                  <div class="bd">
-                    <a href="http://registrano.com/events/nodeworkshop1" target="_blank" class="external-link btn btn-large btn-danger">報名 Node.js 工作坊</a>
-                    <div class="tip">
-                      工作坊活動，於 2012 / 11/ 10 下午一點到下午六點，帶領各位從無到有建立 Node.js Web 應用
-                    </div>
-                  </div>
-                </li>
-                <li class="release">
-                  <div class="hd">
-                    <div class="icon icon-profile person-1">
-                      <div class="icon-profile-circle"></div>
-                      <div class="icon-profile-rectangle"></div>
-                    </div>
-                    <div class="icon icon-profile person-2">
-                      <div class="icon-profile-circle"></div>
-                      <div class="icon-profile-rectangle"></div>
-                    </div>
-                    <div class="icon icon-profile person-3">
-                      <div class="icon-profile-circle"></div>
-                      <div class="icon-profile-rectangle"></div>
-                    </div>
-                    <div class="name announce" id="onfire">規定須知</div>
-                  </div><!-- .style .hd end -->
-                  <div class="bd">
-                    <ul>
-                      <li>報名需完成以上步驟，取得通知信件，以茲證明參賽資格</li>
-                      <li>隊伍需一人以上，四人以內團隊</li>
-                      <li>程式需要發佈至 GITHUB.COM ，同時發佈於 NODEJITSU，參照國際規定</li>
-                      <li>黑客頌程式，限定於比賽 48 小時，逐步建立，不得有偷吃步行為</li>
-                      <li>比賽開始前，建議將共用模組抽出，打造初步藍圖，以免向隅</li>
-                    </ul>
-                  </div>
-                </li>
-              </ul><!-- ul end -->
-            </div><!-- .step end -->
-          </div><!-- .show-grid end -->
-        </div><!-- .doc-grid end -->
-        <div class="land ct1">
-          <span class="short-sentence ct1">如有問題，主動聯繫</span>
-          <div class="print">
-            <a href="mailto:contact@nodejs.tw" title="聯絡主辦單位">
-              <span class="word-1">聯絡</span>
-              <span class="word-2">本部</span>
-            </a>
-          </div><!-- .print end -->
-        </div><!-- .land end -->
-      </div><!--.article end -->
-      <div class="footer">
-        <ul>
-          <li class="host">
-            <span class="header">主辦單位：</span>
-            <ul>
-              <li><a href="http://nodejs.tw" target="_blank">Nodejs Taiwan</a></li>
-              <li><a href="http://jsdc.tw" target="_blank" title="JSDC Taiwan"><img style='width: 100px;' src="http://jsdc.tw/2013/img/website_logo.png"></a></li>
-              <li><a href="http://micloud.tw" title="MiCloud tw"><img src="/images/micloud-logo-big.png"></a></li>
-              <li><a href="http://www.openfoundry.org/" title="自由軟體鑄造場"><img src="/images/ossf.png"></a></li>
-            </ul>
-          </li>
-          <li class="sponsor">
-            <span class="header">贊助單位：</span>
-            <div class="bd">
-              <ul class="sheet" >
-                <li><a href="http://ecmascript.tw" title="#">愛可碼</a></li>
+<!doctype html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8">
+        <title>Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰</title>
+
+        <!-- Load Lato font from Google Web Fonts -->
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+
+        <!-- Force mobile devices to turn fullscreen mode -->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <!-- Stylesheet assets -->
+        <link rel="stylesheet" href="/stylesheets/reset.css">
+            <link rel="stylesheet" href="/stylesheets/skeleton.css">
+        <!-- /Stylesheet assets -->
+
+        <!-- Template stylesheet -->
+        <link href="/stylesheets/style_new.css" rel="stylesheet">
+        <!-- /Template stylesheet -->
+
+        <!-- Color scheme stylesheet -->
+        <link href="/stylesheets/colors-red.css" rel="stylesheet" id="color_stylesheet">
+        <!-- /Color scheme stylesheet -->
+
+        <!-- Scripts -->
+        <script src="/javascripts/jquery.js"></script>
+        <script src="/javascripts/jquery.rotate.js"></script>
+        <script src="/javascripts/jquery.breakit.js"></script>
+        <script src="/javascripts/js.js"></script>
+        <script src="/javascripts/plugin.js"></script>
+        <!-- /Scripts -->
+    </head>
+
+    <body class="broken-animated">
+        <div class="container">
+          <div class="sns">
+            <span class="tw-share"><a href="https://twitter.com/share" data-url="http://nodeknockout.nodejs.tw/" data-via="Node.JS KO Taiwan" data-hashtags="node.js hackthon" class="twitter-share-button">Tweet</a></span>
+            <span class="g-share"><g:plusone size="small" href="http://nodeknockout.nodejs.tw/"></g:plusone></span>
+            <span class="fb-like" data-href="http://nodeknockout.nodejs.tw/" data-layout="button_count" data-send="false" data-width="450" data-show-faces="false"></span>
+          </div>
+            <!-- HEADER -->
+          <div id="header">
+                <a href="http://registrano.com/events/nodeworkshop1" target="_blank" class="broken broken-swing" id="logo">
+                    <img src="/images/workshop_node.png" alt="報名表" border="0">
+                </a>
+            <!-- NAVIGATION -->
+            <!-- navigation -->
+            <div id="nav">
+              <ul>
+                <li><a href="/">首頁</a></li>
+                <li><a href="#agenda">行程表</a></li>
+                <li><a href="mailto:contact@nodejs.tw">如有問題請與我們聯絡 contact us.</a></li>
               </ul>
             </div>
-          </li>
-        </ul>
-      </div><!--.footer end -->
 
-    </section>
-    </div>
-    <div id="fb-root"></div>
-<script>
-<!--
-/*
-#Node knockout Taiwan github
- * [github project](https://github.com/clonn/nodeko-tw)
- * 關於 node.js 的參考資料，直接可以找 [book.nodejs.tw](http://book.nodejs.tw)
+            <div id="fullhouse">
+              <strong>感謝各位</strong> Node Knockout 台灣站，報名額滿，歡迎新手朋友參加 Node.js 工作坊，一起邁向明年 Node Knockout<br>
+            </div>
+            <p class="zh">
+              <strong>參加辦法：</strong>對內參賽名冊，將送件至 <a href="" target="_blank">NodeKnockout 主站</a>，審核通過將會寄送郵件通知，請激活您的帳號，報名截止日期於 2012年11月02日 ，實況以國際時間為主。<br>
+              <strong>參加資格：</strong>報名需完成以上步驟，取得通知信件，以茲證明參賽資格隊伍需一人以上，四人以內團隊程式需要發佈至 GITHUB.COM ，同時發佈於 NODEJITSU，參照國際規定黑客頌程式，限定於比賽 48 小時，逐步建立，不得有偷吃步行為。比賽開始前，建議將共用模組抽出，打造初步藍圖，以免向隅 </p>
+            </div>
+            <!-- /HEADER -->
 
-##技術資料
- * http://twitter.github.com/bootstrap/index.html
- * http://jquery.com
- * http://lucianmarin.com/peculiar/
- * http://www.justfont.com/
- * http://nodeknockout.com/
+            <!-- ADDITIONAL MESSAGE -->
+          <div id="message">
+                <p class="ultrabold">2012/11/10 - 11/11</p>
+                <p>AM8:00 Start<br><span class="ultrabold">48HR!</span></p>
+            </div>
+            <!-- /ADDITIONAL MESSAGE -->
 
- PS. 正在尋找贊助商，還有場地，請各位協助 m(_ _)m
- */
--->
-</script>
-  </body>
+            <!-- ERROR MESSAGE -->
+          <h1 id="error">
+              <span id="core">NODE.JS</span>
+              <span id="core2">KO</span>
+          </h1>
+            <!-- /ERROR MESSAGE -->
+        </div>
+        <footer>
+          <div class="bd">
+            <ul>
+              <li class="host">
+                <div class="header">主辦單位：</div>
+                <ul class="host-list clearfix">
+                  <li class="micloud"><a href="http://micloud.tw" target="_blank" title="MiCloud tw"><img src="/images/micloud-logo-big.png"></a></li>
+                  <li class="ossf"><a href="http://www.openfoundry.org/" target="_blank" title="自由軟體鑄造場"><img src="/images/ossf.png"></a></li>
+                  <li class="jsdc"><a href="http://jsdc.tw" target="_blank" title="JSDC Taiwan"><img src="http://jsdc.tw/2013/img/website_logo.png"></a></li>
+                  <li class="node"><a href="http://nodejs.tw" target="_blank" title="Node.js Taiwan"><img src="/images/nodetw.jpg"></a></li>
+                </ul>
+              </li>
+              <li class="sponsor">
+                <div class="header">贊助單位：</div>
+                <div class="sponsor-list clearfix">
+                  <ul class="sheet" >
+                    <li class="aotter"><a href="http://www.aotter.net/" target="_blank" title="aotter"><img src="/images/aotter.png"></a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="thanks">
+                <div class="header">特別感謝：</div>
+                <div class="thanks-list clearfix">
+                  <ul class="list">
+                    <li class="citi"><a href="http://www.citi.sinica.edu.tw/" target="_blank" title="citi"><img src="/images/citi.png"></a></li>
+                    <li class="nsc"><a href="http://web1.nsc.gov.tw/" target="_blank" title="nsc"><img src="/images/nsc.jpg"></a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </footer>
+    </body>
 </html>
