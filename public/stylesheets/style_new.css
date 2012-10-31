@@ -125,7 +125,16 @@ p
         background:#363636;
         color:#EEB52F;
 }
-
+.location {
+  padding-top: 50px;
+}
+.location h3 {
+  font-weight: 800;
+}
+.location strong {
+  background: #363636;
+  color: #EEB52F;
+}
 #error-text
 {
     margin-left: 16px;
@@ -143,7 +152,7 @@ table thead {
 }
 #tabs .schedule {
    width: 500px;
-   margin: 0 auto;
+   margin-top: 30px;
 }
 #tabs #workshop .schedule {
    width: 650px;
@@ -199,7 +208,7 @@ footer li.ossf img {
   width: 180px;
 }
 footer li.micloud img {
-  width: 150px;
+  width: 200px;
 }
 footer li.jsdc img {
   width: 45px;
