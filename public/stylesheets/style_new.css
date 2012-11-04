@@ -140,7 +140,6 @@ p
     margin-left: 16px;
 }
 table {
-   width: 400px;
    float: left;
    margin-right: 20px;
 }
@@ -157,8 +156,11 @@ table thead {
 #tabs #workshop .schedule {
    width: 650px;
 }
-#tabs #workshop .schedule .time {
+#tabs .schedule .time {
    width: 100px;
+}
+#tabs #hackthon table {
+  width: 400px;
 }
 #tabs #workshop .schedule .workshop {
    width: 300px;
