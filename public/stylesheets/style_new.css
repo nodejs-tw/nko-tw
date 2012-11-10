@@ -6,6 +6,10 @@ Template stylesheet
 
 /* BODY */
 
+
+#twitter-widget-1 {
+  width:850px;
+}
 body
 {
     margin: 0;
