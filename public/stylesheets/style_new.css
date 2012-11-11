@@ -154,6 +154,13 @@ table thead {
 #tabs {
    opacity: 0.9;
 }
+#tabs #judge table td {
+   padding: 10px;
+   vertical-align: top;
+}
+#tabs #judge img{
+   width: 200px;
+}
 #tabs .schedule {
    margin-top: 30px;
 }
