@@ -4,32 +4,34 @@
         <meta charset="utf-8">
         <title>Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰</title>
 
-        <!-- Load Lato font from Google Web Fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,900' rel='stylesheet' type='text/css'>
+        <!-- load lato font from google web fonts -->
+        <link href='http://fonts.googleapis.com/css?family=lato:300,400,700,900' rel='stylesheet' type='text/css'>
 
-        <!-- Force mobile devices to turn fullscreen mode -->
+        <!-- force mobile devices to turn fullscreen mode -->
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-        <!-- Stylesheet assets -->
+        <!-- stylesheet assets -->
         <link rel="stylesheet" href="/stylesheets/reset.css">
             <link rel="stylesheet" href="/stylesheets/skeleton.css">
-        <!-- /Stylesheet assets -->
+        <!-- /stylesheet assets -->
 
-        <!-- Template stylesheet -->
+        <!-- template stylesheet -->
         <link href="/stylesheets/style_new.css" rel="stylesheet">
-        <!-- /Template stylesheet -->
+        <!-- /template stylesheet -->
 
-        <!-- Color scheme stylesheet -->
+        <!-- color scheme stylesheet -->
         <link href="/stylesheets/colors-red.css" rel="stylesheet" id="color_stylesheet">
-        <!-- /Color scheme stylesheet -->
+        <link href="/stylesheets/ui-darkness/jquery-ui-1.9.1.custom.min.css" rel="stylesheet">
+        <!-- /color scheme stylesheet -->
 
-        <!-- Scripts -->
+        <!-- scripts -->
         <script src="/javascripts/jquery.js"></script>
         <script src="/javascripts/jquery.rotate.js"></script>
         <script src="/javascripts/jquery.breakit.js"></script>
         <script src="/javascripts/js.js"></script>
-        <script src="/javascripts/plugin.js"></script>
-        <!-- /Scripts -->
+        <script src="/javascripts/jquery-ui-1.9.1.custom.min.js"></script>
+        <script type="text/javascript" src="/javascripts/plugin.js"></script>
+        <!-- /scripts -->
     </head>
 
     <body class="broken-animated">
@@ -39,9 +41,11 @@
             <span class="g-share"><g:plusone size="small" href="http://nodeknockout.nodejs.tw/"></g:plusone></span>
             <span class="fb-like" data-href="http://nodeknockout.nodejs.tw/" data-layout="button_count" data-send="false" data-width="450" data-show-faces="false"></span>
           </div>
-            <!-- HEADER -->
+            <!-- header -->
           <div id="header">
-            <!-- NAVIGATION -->
+                <a href="http://registrano.com/events/nodeworkshop1" target="_blank" class="broken broken-swing" id="logo">
+                    <img src="/images/workshop_node.png" alt="報名表" border="0">
+                </a>
             <!-- navigation -->
             <div id="nav">
               <ul>
@@ -51,18 +55,60 @@
                 <li><a href="mailto:contact@nodejs.tw">如有問題請與我們聯絡 contact us.</a></li>
               </ul>
             </div>
-
-            <div id="fullhouse">
-              <strong>活動開始！</strong> Node Knockout 台灣站，報名額滿，歡迎新手朋友參加 Node.js 工作坊，一起邁向明年 Node Knockout<br>
-            </div>
-            <div id="realtime" style='text-align: center'>
-              <a class="twitter-timeline" data-dnt=true href="https://twitter.com/NodejsTaiwan" data-widget-id="267076394993975296">Tweets by @NodejsTaiwan</a>
-              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.width="960";js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-            </div>
-            <p class="zh">
-              <strong>參加辦法：</strong>對內參賽名冊，將送件至 <a href="http://nodeknockout.com/" target="_blank">NodeKnockout 主站</a>，審核通過將會寄送郵件通知，請激活您的帳號，報名截止日期於 2012年11月02日 ，實況以國際時間為主。<br>
-              <strong>參加資格：</strong>報名需完成以上步驟，取得通知信件，以茲證明參賽資格隊伍需一人以上，四人以內團隊程式需要發佈至 GITHUB.COM ，同時發佈於 NODEJITSU，參照國際規定黑客頌程式，限定於比賽 48 小時，逐步建立，不得有偷吃步行為。比賽開始前，建議將共用模組抽出，打造初步藍圖，以免向隅<br>
-              <strong>活動地點：</strong>中央研究院 資訊科學研究所 台北市南港區研究院路二段128號 <br>
+<div id="tabs">
+    <ul>
+        <li><a href="#judge">評審介紹</a></li>
+    </ul>
+    <div id="judge" class="clearfix">
+      <div class="preface">
+      </div>
+      <div class="schedule clearfix">
+        <table>
+        <thead>
+        <tr>
+        <th> 照片    </th>
+        <th> 簡介 </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td> <img src="/images/brecht.jpg"> </td>
+        <td>黃柏諺, <br>Brecht,<br> iT邦幫忙產品經理、iThome電腦報<br> 從1996年寫下第一行alert('Hello World')開始，便著迷於JavaScript的魅力，並觀注著JS究竟會把我們帶向宇宙的哪一個盡頭
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <img src="/images/fillano.png">
+        </td>
+        <td>馮旭平<br>Fillano,費大公,<br>
+            鑫景科技產品企劃、即時利尼克斯有限公司企劃部經理、吉立富資訊管理股份有限公司專案經理<br>
+            <p>大約自2000年就開始接觸及使用Javascript，並用來開發專案，也持續關心Javascript相關技術及其發展。大約自2006年開始固定在blog上撰寫PHP與Javascript相關技術文章，2009年之後數次以Javascript相關技術主題參加IT邦幫忙網站舉辦之IT邦幫忙鐵人賽，並在2010以html5、2011年以node.js為主題獲獎。除了Javascript外，工作上主要使用PHP、Java、C以及C#等語言進行開發，並專注在開發網站相關應用。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <img src="/images/jesse.png">
+        </td>
+        <td>趙元瀚,<br>Jesse,<br>
+            MiCloud發起人、營運總監；資訊服務研發處 處長公司名稱：神通資訊科技<br>
+            <p>歷任國內數個大型交通控制系統專案經理，擅長大型系統軟硬體架構設計，目前帶領MiCloud團隊進行研發，希望在公有雲上打造出各種嶄新的應用。</p>
+        </td>
+        </tr>
+        <tr>
+        <td>
+          <img src="/images/lucaswang.jpg">
+        </td>
+        <td>Lucas Wang,<br>
+            TMI台灣創意工場 創辦人首席執行官<br>
+            <p>在創辦並成為TMI Holding Group(台灣創意工場)的首席執行官的同時，Lucas也在美商中經合集團擔任投資合夥人六年。他带領美商中經合集團的台北和北京辦事處在TMT(電信，媒體和技術)方面的投資。他在北京的工作,包括與Kaifu Lee密切合作的創新工場，促進投資活動。在他任職期間，Lucas有幾項投資成果, SemiLEDs（Nasdaq：LEDS，2011年）和21Vianet（Nasdaq：VNET，2011年），並主導SNS Plus（台灣）和Leiyoo（北京）的早期投資。</td>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <span align="left">以上順序依照英文名稱排序</span>
+      </div><!-- end of #schedule -->
+    </div>
+</div>
             </div>
             <!-- /HEADER -->
 
@@ -112,5 +158,10 @@
             </ul>
           </div>
         </footer>
+<script>
+    $(function() {
+        $( "#tabs" ).tabs();
+    });
+</script>
     </body>
 </html>
