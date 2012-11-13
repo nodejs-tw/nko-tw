@@ -173,6 +173,10 @@ table thead {
 #tabs #hackthon table {
   width: 400px;
 }
+#tabs #hackthon table a ,
+#tabs #workshop table a {
+  color: red;
+}
 #tabs #workshop .schedule .workshop {
    width: 300px;
 }
