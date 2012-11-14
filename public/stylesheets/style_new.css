@@ -6,6 +6,7 @@ Template stylesheet
 
 /* BODY */
 
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
 
 #twitter-widget-1 {
   width:850px;
@@ -189,7 +190,8 @@ table thead {
 }
 #fullhouse strong {
   font-size: 48px;
-  background: #C22C2C;
+  background: #363636;
+  color: #FFF;
 }
 #hackthon .preface h3 {
   background: #363636;
@@ -347,3 +349,102 @@ html[xmlns] .clearfix {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+
+/* 參賽隊伍 */
+#entries{
+	margin-bottom: 50px;
+}
+
+#entries a{
+	text-decoration: none;
+	color: #C22C2C;
+}
+
+#entries ul{
+	margin: 0;
+	padding: 0;
+}
+
+#entries ul li{
+	position: relative;
+	margin-bottom: 20px;
+	background: rgba(0, 0, 0, .1);
+	padding: 1%;
+	border-left: 5px rgba(0, 0, 0, .1) solid;
+}
+
+#entries ul li:after{
+	clear: both;
+}
+
+#entries ul li:before, #entries ul li:after{
+	display: table;
+	content: "";
+	zoom: 1;
+}
+
+#entries .screenshot{
+	float: left;
+	width: 20%;
+	height: auto;
+	border: 2px #333 solid;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+	border-radius: 2px;
+}
+
+#entries .screenshot img{
+	width: 100%;
+	height: auto;
+	vertical-align: middle;
+}
+
+#entries .entrie{
+	float: right;
+	width: 78%;
+	z-index: 1;
+}
+
+#entries .entrie h2, #entries .entrie h4{
+	font-family: 'Inconsolata';
+}
+
+#entries .entrie h2{
+	font-size: 24px;
+}
+
+#entries li[data-badges='1P']{
+	border-left: 5px #C22C2C solid;
+}
+
+#entries .badges{
+	position: absolute;
+	right: -25px;
+	top: -25px;
+	width: 100px;
+	height: 100px;
+	z-index: -1;
+	-webkit-transform: rotate(15deg);
+	-moz-transform: rotate(15deg);
+	-ms-transform: rotate(15deg);
+	-o-transform: rotate(15deg);
+	transform: rotate(15deg);
+}
+
+@media only screen and (max-width: 479px) {
+	
+	#entries .badges{
+		display: none;
+	}
+
+	#entries .screenshot{
+		display: none;
+	}
+
+	#entries .entrie{
+		float: left;
+		width: 100%;
+	}	
+
+}
