@@ -63,4 +63,12 @@ $(document).ready(function()
         $('.broken-swing').breakIt('swing', data[type]);
         $('.broken-crack').breakIt('crack', data[type]);
     }
+    
+    /* 參賽者名次 */
+    $('#entries ul li').each(function(){
+    	var $this = $(this);
+    	if($this.data('badges')){
+    		$this.append($('<img>').addClass('badges').attr('src', 'images/badges/Badges_' + $this.data('badges') + '.png'));
+    	}
+    });
 });
