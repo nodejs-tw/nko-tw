@@ -3,15 +3,22 @@
  * GET home page.
  */
 
-exports.index = function(req, res){
-  res.render('index', { title: 'Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰' });
+var route2012 = require('./route2012'),
+	route2013 = require('./route2013')
+
+var set = function (app) {
+
+	// 2012
+	app.get('/2012', route2012.index);
+	app.get('/2012/new', route2012.new);
+	app.get('/2012/agenda', route2012.agenda);
+	app.get('/2012/judge', route2012.judge);
+
+	// 2013
+	app.get('/2013', route2013.index);
+	app.get('/', route2013.index);
+	app.get('/index', route2013.index);
+
 };
-exports.new = function(req, res){
-  res.render('new', { title: 'Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰' });
-};
-exports.agenda = function(req, res){
-  res.render('agenda', { title: 'Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰' });
-};
-exports.judge = function(req, res){
-  res.render('judge', { title: 'Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰' });
-};
+
+module.exports.set = set;
