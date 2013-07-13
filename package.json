@@ -11,6 +11,7 @@
     "stylus": "*",
     "connect": "2.4.5",
     "connect-assetmanager": "0.0.28",
-    "connect-assetmanager-handlers": "0.0.18"
+    "connect-assetmanager-handlers": "0.0.18",
+    "mailchimp": "~1.1.0"
   }
 }
