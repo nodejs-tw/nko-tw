@@ -18,6 +18,7 @@ var set = function (app) {
 	app.get('/2013', route2013.index);
 	app.get('/', route2013.index);
 	app.get('/index', route2013.index);
+	app.get('/regist', route2013.regist);
 
 };
 
