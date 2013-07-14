@@ -1,3 +1,4 @@
 module.exports = {
-	mailchimp: "-- mailchimp key--"
+    mailchimp: "--mail chimp key --",
+    listId: '--list id --'
 };
