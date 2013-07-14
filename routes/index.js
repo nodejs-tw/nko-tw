@@ -19,7 +19,9 @@ var set = function (app) {
 	app.get('/', route2013.index);
 	app.get('/index', route2013.index);
 	app.get('/regist', route2013.regist);
-	app.get('/mailchimp/list', route2013.list);	
+	app.get('/error', route2013.error);
+	app.post('/mailchimp/subscribe', route2013.subscribe);
+	app.get('/mailchimp/subscribe', route2013.getSubscribe);
 
 };
 

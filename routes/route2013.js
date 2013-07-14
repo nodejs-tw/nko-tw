@@ -9,6 +9,17 @@ exports.index = function(req, res){
 
 var mailchimp = require('../controllers/mailchimp');
 
-exports.regist = mailchimp.regist;
+exports.subscribe = mailchimp.subscribe;
 
 exports.list = mailchimp.list;
+
+exports.success = mailchimp.success;
+
+exports.error = function (req, res) {
+	res.send('Error page');
+};
+
+
+exports.getSubscribe = function (req, res) {
+	res.redirect('/');
+};
