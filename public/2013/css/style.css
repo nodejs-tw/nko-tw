@@ -228,6 +228,16 @@ img.icon_img {
 	text-align:center;	
 }
 
+.filtr_bg input[type=email] {
+	width: 70%;
+	height: 2em;
+	line-height: 2em;
+}
+
+.filtr_bg input[type=submit] {
+	height: 2.5em;
+}
+
 #slide1 h1 {
 	float:none;
 	display:block;
@@ -246,7 +256,6 @@ img.icon_img {
 	margin:0;
 	padding:0 0 14px;
 	text-align:center;
-	border-bottom:1px solid #cecece;
 	text-transform:uppercase;
 	font-family: 'Raleway', sans-serif;
 	font-size: 22px;
@@ -924,6 +933,20 @@ img.icon_img {
 	color:#fff;
 }
 #back_top a.button:hover {text-decoration:none;}
+
+#subscribe-message {
+	opacity: 0.8;
+	margin: 10px 0px;
+	display: inline-block;
+	color: #fff;
+	padding: 10px 20px;
+}
+#subscribe-message.warning {
+	background: #c60f13;
+}
+#subscribe-message.success {
+	background: #5da423;
+}
 /* ____________ //BACK_TOP __________ */
 
 /* ___________________________________ //FOOTER ___________________________________ */
