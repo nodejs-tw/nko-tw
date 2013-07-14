@@ -52,6 +52,9 @@
 
 		});		
 	</script>
+
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "f250681a-1ed4-4254-b607-9cc018155fff", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
 	
 </head>
 
@@ -71,7 +74,7 @@
 						<div class="right_bord"></div>
 					</div>
 					<h1>NKO Taiwan</h1>
-					<span>Node.js Hackthon for 48 hours in Taiwan 2013</span>
+					<span>台灣第二年 48 小時 Node.js Hackthon 活動</span>
 
 <% if(typeof error !== 'undefined') { %>
 	 				<div id='subscribe-message' class='warning'>
@@ -84,7 +87,7 @@
 	 				</div>
 <% } %>
 
-<% if(typeof error == 'undefined' && typeof success !== 'undefined') { %>
+<% if(typeof error == 'undefined' && typeof success == 'undefined') { %>
 					<form action='/mailchimp/subscribe' method='POST' id='subscribe-form'>
 						<fieldset>
 							<legend>Subscribe</legend>
@@ -93,6 +96,13 @@
 						</fieldset>
 					</form>
 <% } %>
+					<div id='sns'>
+						<span class='st_fblike_hcount' displayText='Facebook Like'></span>
+						<span class='st_facebook_hcount' displayText='Facebook'></span>
+						<span class='st_twitter_hcount' displayText='Tweet'></span>
+						<span class='st_linkedin_hcount' displayText='LinkedIn'></span>
+						<span class='st_pinterest_hcount' displayText='Pinterest'></span>
+					</div>
 					<a class="button" title="" data-slide="2"></a>
 				</div>
 				<div class="clear"></div>
@@ -131,61 +141,31 @@
 		<div class="clear"></div>
 		
 		<div id="content">
-			<div class="grid_8">
-				<h4>Some Things About Me</h4>
-				<p>Morbi rutrum, elit ac fermentum egestas, tortor ante vestibulum est, eget scelerisque nisl velit eget tellus. Fusce porta facilisis luctus. Integer neque dolor, rhoncus nec euismod eget, pharetra et tortor. Nulla id pulvinar nunc. Vestibulum auctor nisl vel lectus ullamcorper sed pellentesque dolor eleifend. Praesent lobortis magna vel diam mattis sagittis. Mauris porta odio eu risus scelerisque id facilisis ipsum dictum.</p>
-				<p>Vitae volutpat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed pulvinar neque eu purus sollicitudin et sollicitudin dui ultricies. Maecenas cursus auctor tellus sit amet blandit. Maecenas a erat ac nibh molestie interdum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed lorem enim, ultricies sed sodales id, convallis molestie ipsum. Morbi eget dolor ligula. Vivamus accumsan rutrum nisi nec elementum. Pellentesque at nunc risus. Phasellus ullamcorper bibendum varius.</p>
+			<div class="grid_12">
+				<h4>關於 Node Knockout TW 2013</h4>
+				<p>Node Knockout 台灣黑客頌 2013 活動，由 Node.js 台灣社群、JSDC 以及 MiCloud 共同主辦，去年 2012 活動有 50 多名 Node.js 開發者參與，並且在 48 小時內創造出令人驚艷互動網路應用，今年 2013 目標希望藉著 Node.js 技術為後端技術，不限前台載具擴展到網路後端應用，網路應用開發，協同合作平台以及手持式平台裝置應用相關範圍等，特別是此活動與全世界同步進行，讓台灣開發者與世界舞台銜接，促進開發者在技術面及市場面向的整合。.</p>
+				<p>今年繼續保持 Node Knockout 原有作風，與全世界同步進行 48 小時連續式開發，開發技術必須包含 Node.js ，可搭配其他語言進行整合開發，希望透過此活動能夠提升 Node.js 開發技術提升，同時將自己的產品推向國際，與世界接軌。</p>
 			</div>
-			<div class="grid_4 omega">
-				<h4>Testimonials</h4>
-				<div class="testim_in">
-					<div class="testim_block">
-						Morbi rutrum, elit ac fermentum egestas, tortor ante vestibulum est, eget scelerisque nisl velit eget tellus. Fusce porta facilisis
-						<span></span>
-					</div>
-					<div class="author">Jack Welch</div>
-					<div class="clear"></div>
-				</div>
-				<div class="testim_in">
-					<div class="testim_block">
-						Mauris accumsan ante vitae tortor varius id fringilla ipsum ullamcorper. Sed quis est odio.
-						<span></span>
-					</div>
-					<div class="author">Alison McBrian</div>
-					<div class="clear"></div>
-				</div>
-			</div>
+			
 			<div class="clear"></div>
 			
 			<div class="about_bord"></div>
 			
 			<div class="grid_12">
-				<h4>What I Do</h4>
+				<h4><a href="/2012" target="_blank">Node Knockout TW 2012 作品</a></h4>
 				<div id="jcarousel">
 					<ul id="mycarousel" class="jcarousel-skin-tango">
 						<li>
-							<img src="images/icon1.png" />
-							<p>Web Design</p>
-							<div class="clear"></div>
-							Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus tempor ipsum vel sapien mattis consequat. Etiam pharetra vestibulum urna sed
+							<img src="/images/screenshot/topgan.png" />
 						</li>
 						<li>
-							<img src="images/icon2.png" />
-							<p>Branding</p>
-							<div class="clear"></div>
-							Duis porttitor neque quis lectus gravida ut scelerisque lacus adipiscing. In malesuada pretium ante mattis consectetur. Phasellus adipiscing augue nec ipsum interdum molestie
+							<img src="/images/screenshot/beautybook.png" />
 						</li>
 						<li>
-							<img src="images/icon3.png" />
-							<p>Graphic design</p>
-							<div class="clear"></div>
-							Proin elementum, lacus vitae consectetur pellentesque, dolor nisi euismod velit, ac placerat metus arcu sit amet lectus. Curabitur eu fermentum lorem. Nulla adipiscing pulvinar risus, nec
+							<img src="/images/screenshot/haha.png" />
 						</li>
 						<li>
-							<img src="images/icon4.png" />
-							<p>Web Development</p>
-							<div class="clear"></div>
-							Aliquam erat volutpat. Donec interdum blandit metus, et tincidunt augue ultrices sit amet. Quisque pulvinar libero dictum erat aliquet venenatis. Sed vel eleifend mauris.
+							<img src="/images/screenshot/isdmd.png" />
 						</li>
 						<div class="clear"></div>
 					</ul>
@@ -469,6 +449,7 @@
 <div id="footer">
 	<div class="container clearfix">
 		<div class="copyright">John Doe &copy; 2020 | <a href="javascript:void(0);">Privacy Policy</a></div>
+		<div class="copyright"> Node.js Taiwan Community 2013 </div>
 		<div id="back_top"><a class="button" title="" data-slide="1"></a></div>
 	</div>
 </div>

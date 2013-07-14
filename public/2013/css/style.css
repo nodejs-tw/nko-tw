@@ -252,6 +252,7 @@ img.icon_img {
 	color:#fff;
 	font-weight:900;
 }
+/**
 #slide1 span {
 	margin:0;
 	padding:0 0 14px;
@@ -264,6 +265,7 @@ img.icon_img {
 	font-weight:800;
 	letter-spacing:0.7px;
 }
+**/
 .slogan_text {
 	display:inline-block;
 	padding:0 25px;
@@ -287,7 +289,7 @@ img.icon_img {
 #slide1 .button {
 	cursor:pointer;
 	display:block;
-	margin:185px auto 0;
+	margin:130px auto 0;
 	width:35px;
 	height:20px;
 	border:none;
@@ -946,6 +948,14 @@ img.icon_img {
 }
 #subscribe-message.success {
 	background: #5da423;
+}
+#content a,
+#content a:active
+ {
+	color: #fff;
+}
+#content ul img {
+	width: 50%;
 }
 /* ____________ //BACK_TOP __________ */
 
