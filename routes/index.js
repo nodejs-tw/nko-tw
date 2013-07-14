@@ -19,6 +19,7 @@ var set = function (app) {
 	app.get('/', route2013.index);
 	app.get('/index', route2013.index);
 	app.get('/regist', route2013.regist);
+	app.get('/mailchimp/list', route2013.list);	
 
 };
 
