@@ -24,10 +24,6 @@ var filterBefore = function (req, res) {
 
 module.exports.subscribe = function (req, res) {
     
-    if ( ! filterBefore(req, res) ) {
-        return;
-    }
-
     var email = req.body.email;
 
     // validate error email
@@ -36,10 +32,6 @@ module.exports.subscribe = function (req, res) {
         console.log('[STATUS] error email');
         return res.render('2013/index', { title: 'Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰', error: '請輸入正確 Email 格式' });
     }
-
-    console.log(email);
-
-    //res.send('subscribe is proccessing');
 
     api.call('lists', 'subscribe', {id: listId, email:{email: email}, merge_vars: null, email_type: 'html', double_optin: false, update_existing: false, replace_interests: false, send_welcome: true}, function (error, data) {
         if (error) {
