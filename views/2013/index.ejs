@@ -27,34 +27,47 @@
 		<script src="2013/js/html5shiv.js"></script>
 		<script src="2013/js/respond.src.js"></script>
 	<![endif]-->
-	
-	<script type="text/javascript">
-		$(document).ready(function(){	
-			$("#ajax-contact-form").submit(function() {
-				var str = $(this).serialize();		
-				$.ajax({
-					type: "POST",
-					url: "contact_form/contact_process.php",
-					data: str,
-					success: function(msg) {
-						// Message Sent - Show the 'Thank You' message and hide the form
-						if(msg == 'OK') {
-							result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
-							$("#fields").hide();
-						} else {
-							result = msg;
-						}
-						$('#note').html(result);
-					}
-				});
-				return false;
-			});
-
-		});		
-	</script>
 
 <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-<script type="text/javascript">stLight.options({publisher: "f250681a-1ed4-4254-b607-9cc018155fff", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+<script type="text/javascript">
+$(document).ready(function(){	
+	$("#ajax-contact-form").submit(function() {
+		var str = $(this).serialize();		
+		$.ajax({
+			type: "POST",
+			url: "contact_form/contact_process.php",
+			data: str,
+			success: function(msg) {
+				// Message Sent - Show the 'Thank You' message and hide the form
+				if(msg == 'OK') {
+					result = '<div class="notification_ok">Your message has been sent. Thank you!</div>';
+					$("#fields").hide();
+				} else {
+					result = msg;
+				}
+				$('#note').html(result);
+			}
+		});
+		return false;
+	});
+
+});	
+
+stLight.options({publisher: "f250681a-1ed4-4254-b607-9cc018155fff", doNotHash: false, doNotCopy: false, hashAddressBar: false});
+// GA
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-35142334-1']);
+_gaq.push(['_setDomainName', 'nodejs.tw']);
+_gaq.push(['_trackPageview']);
+(function() {
+  var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+  ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+  var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+window.jfAsyncInit=function(){ctb.main({'appId':'adfc0d2cC1SuRHnM2HFMu-aG94RSHQFQEt6E8qzYjDhyCcq-xWIY2OSRaNGkEgLNAJRaAnUtuaiNvZMfhF1BZe2G5iiWOMfxUqfbssuVLvoP5NDQl5VSqRrqgK8ALjGSdQ75HKKTCTfX_2_tvCcPMM-rEKJS8L-DOCGXr-TA4xjD-rO0-9A='});};(function(){var jf=document.createElement('script');jf.type='text/javascript';jf.async=true;jf.src='http://ds.justfont.com/core/js/v1.0/adfc0d2cC1SuRHnM2HFMu-aG94RSHQFQEt6E8qzYjDhyCcq-xWIY2OSRaNGkEgLNAJRaAnUtuaiNvZMfhF1BZe2G5iiWOMfxUqfbssuVLvoP5NDQl5VSqRrqgK8ALjGSdQ75HKKTCTfX_2_tvCcPMM-rEKJS8L-DOCGXr-TA4xjD-rO0-9A=.js';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(jf,s);})();
+
+
+</script>
 	
 </head>
 
@@ -74,7 +87,7 @@
 						<div class="right_bord"></div>
 					</div>
 					<h1>NKO Taiwan</h1>
-					<span>台灣第二屆 48 小時 Node.js Hackthon 活動</span>
+					
 
 <% if(typeof error !== 'undefined') { %>
 	 				<div id='subscribe-message' class='warning'>
@@ -91,9 +104,11 @@
 					<form action='/mailchimp/subscribe' method='POST' id='subscribe-form'>
 						<fieldset>
 							<legend>Subscribe</legend>
-							<input type='email' name='email' placeholder='Please input ex, user@user.com'>
-							<input type='submit' name='submit-btn' value='Submit'>
+							<span class="quote">台灣第二屆 48 小時 Node.js Hackthon 活動，歡迎留下 Email, 以訂閱 Node Knockout TW 活動最新消息 </span>
+								<input type='email' name='email' placeholder='Please input ex, user@user.com'>
+								<input type='submit' name='submit-btn' value='Submit'>							
 						</fieldset>
+
 					</form>
 <% } %>
 					<div id='sns'>

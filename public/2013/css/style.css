@@ -216,10 +216,18 @@ img.icon_img {
 }
 
 #slide1{
-	background-image:url("../images/slide1_bg.jpg");
+	background-image:url("../images/background.jpg");
 	background-size: cover !important;
 	width:100%;
 	text-align:center;
+}
+#slide1 .quote {
+	color: #eee;
+	background: #3e3e3e;
+	padding: 5px 10px;
+	margin: 10px 0;
+	display: inline-block;
+	opacity: 0.5;
 }
 
 .filtr_bg {
@@ -961,8 +969,16 @@ img.icon_img {
 	width: 50%;
 }
 
+#sns {
+	margin-top: 20px;
+}
+
 #slide4 a {
 	color: #fdc82b;
+}
+#slide1 fieldset {
+	border: 0;
+	border-top: 1px solid #fff; 
 }
 /* ____________ //BACK_TOP __________ */
 
