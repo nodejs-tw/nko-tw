@@ -22,6 +22,7 @@ var set = function (app) {
 	app.get('/error', route2013.error);
 	app.post('/mailchimp/subscribe', route2013.subscribe);
 	app.get('/mailchimp/subscribe', route2013.getSubscribe);
+	app.get('/login-callback', route2013.loginCallback);
 
 };
 

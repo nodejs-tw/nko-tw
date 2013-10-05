@@ -99,16 +99,25 @@
 <% } %>
 
 <% if(typeof error == 'undefined' && typeof success == 'undefined') { %>
-                    <form action='/mailchimp/subscribe' method='POST' id='subscribe-form'>
+                    <!--<form action='/mailchimp/subscribe' method='POST' id='subscribe-form'>
                         <fieldset>
                             <legend>Subscribe</legend>
                             <span class="quote">台灣第二屆 48 小時 Node.js Hackthon 活動，歡迎留下 Email, 以訂閱 Node Knockout TW 活動最新消息 </span>
-                                <input type='email' name='email' placeholder='Please input ex, user@user.com'>
+                                <input class="subscribe-input" type='email' name='email' placeholder='Please input ex, user@user.com'>
                                 <input type='submit' name='submit-btn' value='Submit'>
                         </fieldset>
 
-                    </form>
+                    </form>-->
 <% } %>
+
+                    <div class="github-login">
+<% if (user) { %>
+                      <p><img class="github-avatar" src="<%= user.avatar %>" /><br /><span class="github-user">勇士：<%= user.name %></span></p>
+<% } else { %>
+                      <p><a class="github-login-button" href="https://github.com/login/oauth/authorize?scope=user&client_id=<%= githubClientID %>">Competitor</a><br />via <a href="">github</a></p>
+<% } %>
+                    </div>
+
                     <div id='sns'>
                         <span class='st_fblike_hcount' displayText='Facebook Like'></span>
                         <span class='st_facebook_hcount' displayText='Facebook'></span>
@@ -275,10 +284,6 @@
     </div>
 </div>
 
-
-
-
-
 <div id="footer">
     <div class="container clearfix">
         <div class="copyright"> Node.js Taiwan Community 2013 </div>
@@ -286,12 +291,5 @@
     </div>
 </div>
 
-
 </body>
 </html>
-
-
-
-
-
-
