@@ -21,8 +21,9 @@
 function sliderHeight(){
 		
 	wh = $(window).height();
-	$('#slide1').css({height:wh});
-	
+  inWh = $("#slide1 .container").height();
+  wh = (inWh > wh) ? inWh : wh;
+	//$('#slide1').css({height:inWh});
 }
 
 function mymargtop() {
@@ -109,7 +110,7 @@ jQuery(document).ready(function ($) {
 	
 	
 	// Sticky Navigation	
-		$(".menu").sticky({topSpacing:0});
+		//$(".menu").sticky({topSpacing:0});
 	
 	//DROP menu	
 	if ($(window).width()<750){

@@ -81,7 +81,7 @@
 
                     <div class="slogan">
                         <div class="left_bord"></div>
-                        <div class="slogan_text">2013 Nov/8 - 10</div>
+                        <div class="slogan_text">2013 Nov/8 0800 - Nov/10 2100</div>
                         <div class="right_bord"></div>
                     </div>
                     <h1>NKO Taiwan</h1>
@@ -114,10 +114,20 @@
 <% if (user) { %>
                       <p><img class="github-avatar" src="<%= user.avatar %>" /><br /><span class="github-user">勇士：<%= user.name %></span></p>
 <% } else { %>
-                      <p><a class="github-login-button" href="https://github.com/login/oauth/authorize?scope=user&client_id=<%= githubClientID %>">Competitor</a><br />via <a href="">github</a></p>
+                      <p><a class="github-login-button" href="https://github.com/login/oauth/authorize?scope=user&client_id=<%= githubClientID %>">Competitor</a><br /><a href="https://github.com/login/oauth/authorize?scope=user&client_id=<%= githubClientID %>"><img src="/images/logo_github.png"></a></p>
 <% } %>
                     </div>
-
+                    <div class="github-list">
+<% if (users) { %>
+                        <ul class="clearfix">
+<%    for (key in users) { %>
+<%      user = users[key]; %>
+                            <li><img class="github-avatar" src="<%= user.avatar %>" /><br /><span class="github-user"><%= user.name %></span></li>
+<%    } %>
+                        </ul>
+<% } %>
+                    </div>
+<!--
                     <div id='sns'>
                         <span class='st_fblike_hcount' displayText='Facebook Like'></span>
                         <span class='st_facebook_hcount' displayText='Facebook'></span>
@@ -126,19 +136,20 @@
                         <span class='st_googleplus_hcount' displayText='Google +'></span>
                         <span class='st_email_hcount' displayText='Email'></span>
                     </div>
+-->
                     <a class="button" title="" data-slide="2"></a>
                 </div>
                 <div class="clear"></div>
             </div>
         </div>
-        <div class="inset_shadow"></div>
+        <!-- <div class="inset_shadow"></div> -->
     </div>
 </div>
 
 
 <div class="menu">
     <div class="container clearfix">
-
+        <div id="nodejs-logo"> <img src="/images/logo-nodetw.png"></div>
         <div id="nav">
             <a class="btn_dropdown" data-toggle="collapse" data-target=".nav-collapse_">MENU</a>
             <ul class="navigation">
@@ -153,6 +164,37 @@
     </div>
 </div>
 
+
+<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
+    <div class="container clearfix">
+
+        <div id="content" class="grid_12">
+            <h2>Rule</h2>
+        </div>
+        <div id="content">
+            <div class="grid_12">
+                <h4>參加辦法</h4>
+                <div class="educ_block">
+                    詳細報名資訊，請密切注意本網站
+                </div>
+                <h4>活動日期</h4>
+                <div class="educ_block">
+                    2013 Nov/8 0800 - Nov/10 2100
+                </div>
+                <h4>活動地點</h4>
+                <div class="educ_block">
+                    台北市內湖區堤頂大道二段187號(神通大樓)
+                </div>
+                <h4>活動規則</h4>
+                <div class="educ_block">
+                    四人以內團隊程式需要發佈至 <a href="https://github.com/" target="_blank">GITHUB.COM </a> ，參照國際規定黑客頌程式，限定於比賽 48 小時，逐步建立，不得有偷吃步行為。比賽開始前，建議將共用模組抽出，打造初步藍圖，以免向隅
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+
+    </div>
+</div>
 
 <div class="slide" id="slide2" data-slide="2" data-stellar-background-ratio="0.5">
     <div class="container clearfix">
@@ -201,32 +243,6 @@
 </div>
 
 
-
-
-<div class="slide" id="slide4" data-slide="4" data-stellar-background-ratio="0.5">
-    <div class="container clearfix">
-
-        <div id="content" class="grid_12">
-            <h2>Rule</h2>
-        </div>
-        <div id="content">
-            <div class="grid_12">
-                <h4>參加辦法</h4>
-                <div class="educ_block">
-                    詳細報名資訊，請密切注意本網站
-                </div>
-                <h4>活動規則</h4>
-                <div class="educ_block">
-                    四人以內團隊程式需要發佈至 <a href="https://github.com/" target="_blank">GITHUB.COM </a> ，參照國際規定黑客頌程式，限定於比賽 48 小時，逐步建立，不得有偷吃步行為。比賽開始前，建議將共用模組抽出，打造初步藍圖，以免向隅
-                </div>
-            </div>
-            <div class="clear"></div>
-        </div>
-
-    </div>
-</div>
-
-
 <div class="slide" id="slide8" data-slide="8" data-stellar-background-ratio="0.5">
     <div class="container clearfix">
 
@@ -243,7 +259,7 @@
 
                         <div class="img_block element category01" data-category="category02">
                             <div class="hover_img">
-                                <img class="portf_img" src="images/nodetw.jpg" alt="" />
+                                <img class="portf_img" src="images/nodetw_235.png" alt="" style="top:0" />
                                 <div class="item_description">
                                     <p>Node.js TW</p>
                                     Node.js Taiwan community
@@ -286,7 +302,7 @@
 
 <div id="footer">
     <div class="container clearfix">
-        <div class="copyright"> Node.js Taiwan Community 2013 </div>
+        <div class="copyright">Node.js Taiwan Community 2013 | <a href="mailto:contact@nodejs.tw">Contact </a></div>
         <div id="back_top"><a class="button" title="" data-slide="1"></a></div>
     </div>
 </div>

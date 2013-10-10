@@ -7,11 +7,28 @@ var config = require('../config');
 var User = require('../lib/user');
 
 exports.index = function(req, res){
-  res.render('2013/index', {
-    title: 'Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰',
-    githubClientID: config.github.clientID,
-    user: req.session.user
+
+
+  User.findAll(function (err, data) {
+    try {
+      users = JSON.parse(data);
+    }catch (e) {
+      users = null;
+    }
+
+    res.render('2013/index', {
+      title: 'Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰',
+      githubClientID: config.github.clientID,
+      user: req.session.user,
+      users: users
+    });
   });
+
+  // res.render('2013/index', {
+  //   title: 'Node.js Knockout 台灣黑客頌 - 48 小時不間斷挑戰',
+  //   githubClientID: config.github.clientID,
+  //   user: req.session.user
+  // });
 };
 
 var mailchimp = require('../controllers/mailchimp');
