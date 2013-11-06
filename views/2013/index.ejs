@@ -110,13 +110,7 @@
                     </form>-->
 <% } %>
 
-                    <div class="github-login">
-<% if (user) { %>
-                      <p><img class="github-avatar" src="<%= user.avatar %>" /><br /><span class="github-user">勇士：<%= user.name %></span></p>
-<% } else { %>
-                      <p><a class="github-login-button" href="https://github.com/login/oauth/authorize?scope=user&client_id=<%= githubClientID %>">Competitor</a><br /><a href="https://github.com/login/oauth/authorize?scope=user&client_id=<%= githubClientID %>"><img src="/images/logo_github.png"></a></p>
-<% } %>
-                    </div>
+                    <div class="countdown">challengers ... </div>
                     <div class="github-list">
 <% if (users) { %>
                         <ul class="clearfix">
